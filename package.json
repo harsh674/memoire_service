@@ -4,11 +4,24 @@
   "description": "Handles Requests for Memoire App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon babel/babel-setup.js",
+    "dev:server": "nodemon index",
+    "build:prod": "babel index.js --out-file production.js",
+    "start:prod": "node production.js"
   },
   "author": "harsh674",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.0",
+    "mongoose": "^8.6.3",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/register": "^7.25.7",
+    "babel-loader": "^9.2.1"
   }
 }
