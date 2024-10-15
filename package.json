@@ -1,0 +1,14 @@
+{
+  "name": "memoire_service",
+  "version": "1.0.0",
+  "description": "Handles Requests for Memoire App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harsh674",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
